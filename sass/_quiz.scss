@@ -1,0 +1,122 @@
+body {
+    /*background-image: url(../img/florianska.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.quiz-wrapp {
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+
+    & .result-box {
+        /*flex-basis: 100%;*/
+        background: $second-color;
+        color: white;
+        font-size: 1.8rem;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+    }
+
+    & .set-box {
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        & .infoAlert {
+            background-color: $third-color;
+            margin-bottom: 5px;
+            color: white;
+            border-radius: 10px;
+            letter-spacing: 1px;
+        }
+
+        &__question-box,
+        &__firstAnswer-box,
+        &__secondAnswer-box,
+        &__thirdAnswer-box {
+            @include setup-boxes;
+
+            .check {
+                min-width: 20px;
+                height: 20px;
+                border: 2px solid $first-color;
+                border-radius: 50%;
+                transition: 0.1s;
+                color: white;
+                font-size: 1.3rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+
+                &:hover {
+                    border-width: 3px;
+                }
+
+                &.true {
+                    background-color: $second-color;
+                    border-color: $second-color;
+                }
+
+                &.false {
+                    background-color: $third-color;
+                    border-color: $third-color;
+                }
+            }
+        }
+
+        &__question-box {
+            padding: 0;
+        }
+
+        &__question-box .questionString {
+            padding: 10px;
+        }
+
+        &__firstAnswer-box .answerString,
+        &__secondAnswer-box .answerString,
+        &__thirdAnswer-box .answerString {
+            padding-left: 20px;
+        }
+
+        &__question-box .canter {
+            background-color: $second-color;
+            color: white;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__btn-box {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            &__btn {
+                background: $second-color;
+                color: white;
+                font-size: 1.8rem;
+                padding: 10px 50px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.2s;
+                box-shadow: $box-shadow;
+            }
+
+            &__btn:hover {
+                background: darken($second-color, 8%);
+            }
+        }
+    }
+}

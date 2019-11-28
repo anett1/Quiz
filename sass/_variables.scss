@@ -1,0 +1,18 @@
+$font-family: 'Raleway',
+sans-serif;
+$first-color: #222222;
+$second-color:#034c8c;
+$third-color:#a60303;
+$box-shadow: 0 1px 3px rgba(0, 0, 30, .3);
+
+@mixin setup-boxes {
+    flex-basis: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+    color: $first-color;
+    display: flex;
+}
