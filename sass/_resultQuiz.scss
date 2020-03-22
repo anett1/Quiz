@@ -1,50 +1,48 @@
 .btnResult {
-    background: $second-color;
-    color: white;
-    font-size: 1.8rem;
-    padding: 10px 50px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-    box-shadow: $box-shadow;
+  background: $second-color;
+  color: white;
+  font-size: 1.8rem;
+  padding: 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: $box-shadow;
 }
 
-.resultBWrapp {
-    max-width: 1024px;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 1.5rem;
+.resultWrapp {
+  max-width: 1024px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
 }
 
 .resultDiv {
-    flex-basis: 100%;
-    border-bottom: 1px solid rgba(0, 0, 30, 0.2);
-    margin-bottom: 10px;
-
+  flex-basis: 100%;
+  border-bottom: 1px solid rgba(0, 0, 30, 0.2);
+  margin-bottom: 10px;
 }
 
-.resultDivElement {
-    padding-bottom: 10px;
+.resultDivItem {
+  padding-bottom: 10px;
 
-    & .selectedAnswer {
-        font-weight: 700;
-    }
+  & .answerSelected {
+    font-weight: 700;
+  }
 
-    & .worthAnswer {
-        font-style: italic;
-    }
+  & .answerSelectedStatus {
+    font-style: italic;
+  }
 
-    & .correctAnswer {
-        color: $second-color;
-    }
+  & .answerCorrect {
+    color: $second-color;
+  }
 
-    & .incorrectAnswer {
-        color: $third-color;
-    }
-
+  & .answerIncorrect {
+    color: $third-color;
+  }
 }

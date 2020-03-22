@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Quiz</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700,700i&display=swap&subset=latin-ext"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>Quiz</title>
-</head>
-
-<body>
-  <div class="quiz-wrapp">
-    <div class="result-box">
-      <p>Answers:<br /><span class="correct">0 correct,</span><span class="incorrect"> 0 incorrect</span></p>
-    </div>
-    <div class="set-box">
-      <div class="infoAlert">
-        <h3></h3>
+  <body>
+    <div class="quiz-wrapp">
+      <div class="result-box">
+        <p>
+          Answers:<br /><span class="correct">0 correct,</span
+          ><span class="incorrect"> 0 incorrect</span>
+        </p>
       </div>
-      <div class="set-box__question-box">
-        <div class="canter">
+      <div class="set-box">
+        <div class="infoAlert">
           <h3></h3>
         </div>
-        <div class="questionString">
-          <p></p>
+        <div class="set-box__question-box">
+          <div class="canter">
+            <h3></h3>
+          </div>
+          <div class="questionString">
+            <p></p>
+          </div>
         </div>
-      </div>
-      <div class="set-box__firstAnswer-box">
-        <div class="check firstCheck" data="answerCheck"></div>
-        <div class="answerString" data="answerString">
-          <p></p>
+        <div class="set-box__firstAnswer-box">
+          <div class="check" data="answerCheck"></div>
+          <div class="answerString" data="answerString">
+            <p></p>
+          </div>
         </div>
-      </div>
-      <div class="set-box__secondAnswer-box">
-        <div class="check" data="answerCheck"></div>
-        <div class="answerString" data="answerString">
-          <p></p>
+        <div class="set-box__secondAnswer-box">
+          <div class="check" data="answerCheck"></div>
+          <div class="answerString" data="answerString">
+            <p></p>
+          </div>
         </div>
-      </div>
-      <div class="set-box__thirdAnswer-box">
-        <div class="check" data="answerCheck"></div>
-        <div class="answerString" data="answerString">
-          <p></p>
+        <div class="set-box__thirdAnswer-box">
+          <div class="check" data="answerCheck"></div>
+          <div class="answerString" data="answerString">
+            <p></p>
+          </div>
         </div>
-      </div>
-      <div class="set-box__btn-box">
-        <div class="set-box__btn-box__btn">next &gt;&gt;</div>
+        <div class="set-box__btn-box">
+          <div class="set-box__btn-box__btn">next &gt;&gt;</div>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="js/main.js"></script>
-</body>
-
+    <script type="module" src="js/script.js"></script>
+  </body>
 </html>
